@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>Onblur event </title>
+</head>
+
+<body>
+ <script>
+	function Upper()
+	{
+	var a=document.getElementById("upper");
+	a.value=a.value.toUpperCase();
+	}
+	function Lower()
+	{
+	var a=document.getElementById("lpper");
+	a.value=a.value.toLowerCase();
+	}
+ </script>
+ <input type="text" placeholder="Upper Case" id="upper" onblur="Upper()">
+ <input type="text" placeholder="Lower Case" id="lpper" onblur="Lower()">
+</body>
+</html>

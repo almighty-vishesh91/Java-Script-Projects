@@ -1,0 +1,36 @@
+<!Doctype Html>
+<html>
+<head>
+	<title>JavaScript </title>
+	<link rel="stylesheet" href="/w3.css"
+</head>
+<body>
+
+<script>
+	function square1()
+	{
+	var x=document.getElementById("num1").value;
+	document.getElementById("demo").innerHTML= x*x;
+	document.body.style.backgroundColor="red";
+	}
+	function cube1()
+	{
+	var y=document.getElementById("num1").value;
+	document.getElementById("demo").innerHTML= y*y*y;
+	document.body.style.backgroundColor="blue"
+	}
+	function clr()
+	{
+	document.getElementById("demo").innerHTML= " ";
+	document.getElementById("num1").value= " ";
+	document.body.style.backgroundColor="yellow"
+	}
+</script>
+<input type="text" id="num1">
+<button class="w3-red" onclick="square1()">Square</button>
+<button class="w3-blue" onclick="cube1()">Cube</button>
+<button class="w3-yellow" onclick="clr()">Clean</button>
+<h3 id="demo"></h3>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+ <!Doctype Html>
+ <html>
+ <head>
+	<title>java practise </title>
+ </head>
+ <body>
+ <script>
+	function sum()
+	{
+	var a=parseInt(document.getElementById("num1").value);
+	var b=parseInt(document.getElementById("num2").value);
+	var sum1=a+b;
+	document.getElementById("demo").innerHTML=sum1;
+	document.body.style.background="yellow";
+	}
+	function sub()
+	{
+	var a=parseInt(document.getElementById("num1").value);
+	var b=parseInt(document.getElementById("num2").value);
+	var sum1=a-b;
+	document.getElementById("demo").innerHTML=sum1;
+	document.body.style.background="red";
+	}function mul()
+	{
+	var a=parseInt(document.getElementById("num1").value);
+	var b=parseInt(document.getElementById("num2").value);
+	var sum1=a*b;
+	document.getElementById("demo").innerHTML=sum1;
+	document.body.style.background="green";
+	}function div()
+	{
+	var a=parseInt(document.getElementById("num1").value);
+	var b=parseInt(document.getElementById("num2").value);
+	var sum1=a/b;
+	document.getElementById("demo").innerHTML=sum1;
+	document.body.style.bgcolor="blue";
+	}
+ </script><br>
+ 
+	<input type="text" placeholder="First Value" id="num1">
+	<input type="text" placeholder="Second Value" id="num2"><br><br>
+	<button type="button" onclick="sum()">Click for add</button>
+	<button type="button" onclick="sub()">Click for sub</button>
+	<button type="button" onclick="mul()">Click for mul</button>
+	<button type="button" onclick="div()">Click for div</button>
+	<h3 id="demo"> </h3>
+ </body>
+ </html>

@@ -1,0 +1,56 @@
+<!Doctype Html>
+<html>
+<head>
+	<title>Result</title>
+	<link rel="stylesheet" href="/w3.css">
+	<style>
+	body{margin:1px; padding:1px; margin-top:0px;}
+	input{height:0.5cm; width:1cm;}
+	h1{background-color:grey; text-align:center;}
+	</style>
+</head>
+<body class="w3-grey">
+	<script>
+	function sum()
+	{
+	var a=parseInt(document.getElementById("eng").value);
+	var b=parseInt(document.getElementById("hng").value);
+	var c=parseInt(document.getElementById("sci").value);
+	var d=parseInt(document.getElementById("math").value);
+	var e=parseInt(document.getElementById("sst").value);
+	
+	var sum1=a+b+c+d+e;
+	document.getElementById("tot").innerHTML="Total Marks = "+sum1;
+	var per=sum1/500*100;
+	document.getElementById("per").innerHTML= "Percentage = " +per;
+	
+		if (per>=75)
+		{
+		document.getElementById("fir").innerHTML="Good Work you pass from "+per;
+		}
+		else if (per>=45)
+		{
+		document.getElementById("fir").innerHTML="You pass with "+per;
+		}
+		else
+		{
+		document.getElementById("fir").innerHTML="You are fail with "+per;
+		}
+
+	}
+	</script>
+	<div class="w3-container w3-responsive">
+	<h1 class="w3-padding w3-">Check Your Result Status </h1><br>
+	English: <input type="text" id="eng">
+	Hindi: <input type="text" id="hng">
+	Science: <input type="text" id="sci">
+	Maths: <input type="text" id="math">
+	S.S.T: <input type="text" id="sst">
+	<button class="w3-pink" type="button" onclick="sum()">Result Status</button>
+	
+	<p id="tot"></p>
+	<p id="per"></p>
+	<p id="fir"></p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!Doctype Html>
+<html>
+<head>
+	<title>if else statement</title>
+</head>
+<body>
+	<script>
+	function check()
+	{
+		var a=document.getElementById("num1").value;
+		if (a>=50)
+		{
+		document.write("Congraculations you are passed from 1st score")
+		}
+		else if (a>=33)
+		{
+		document.write("Sorry! you are passed 2nd score")
+		}
+		else 
+		{
+		document.write("You are fail")
+		}
+	}
+	</script>
+	
+	Marks: <input type="text" id="num1">
+	<button type="button" onclick="check()">Check Status</button>
+</body>
+</html>
